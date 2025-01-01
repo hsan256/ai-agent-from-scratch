@@ -1,6 +1,6 @@
-import 'dotenv/config'
 import type { Score, Scorer } from 'autoevals'
 import chalk from 'chalk'
+import 'dotenv/config'
 import { JSONFilePreset } from 'lowdb/node'
 
 type Run = {
