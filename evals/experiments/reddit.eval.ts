@@ -1,7 +1,9 @@
-import { runEval } from '../evalTools'
+import 'dotenv/config'
+
 import { runLLM } from '../../src/llm'
-import { ToolCallMatch } from '../scorers'
 import { redditToolDefinition } from '../../src/tools/reddit'
+import { runEval } from '../evalTools'
+import { ToolCallMatch } from '../scorers'
 
 const createToolCallMessage = (toolName: string) => ({
   role: 'assistant',
