@@ -28,6 +28,12 @@ Create an [API Key from OpenAI](https://platform.openai.com/settings/organizatio
 OPENAI_API_KEY='YOUR_API_KEY'
 ```
 
+## Upstash Account
+A free [Upstash account](https://upstash.com/) is required for hosting a serverless vector database.
+
+## Windows Environments
+The dynamic imports may be incompatible depending on the windows environment, so you may need to run the evals directly. Add the environment import to the top of each eval:
+
 ## Running Evaluations
 
 ### Linux and macOS
