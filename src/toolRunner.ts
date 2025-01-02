@@ -4,6 +4,7 @@ import {
   generateImage,
   generateImageToolDefinition,
 } from './tools/generateImage'
+import { movieSearch, movieSearchToolDefinition } from './tools/movieSearch'
 import { reddit, redditToolDefinition } from './tools/reddit'
 
 export const runTool = async (
@@ -25,6 +26,9 @@ export const runTool = async (
 
     case redditToolDefinition.name:
       return reddit(input)
+
+    case movieSearchToolDefinition.name:
+      return movieSearch(input)
 
     default:
       throw new Error(`Unknown tool: ${toolCall.function.name}`)
